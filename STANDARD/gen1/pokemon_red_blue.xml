@@ -266,6 +266,7 @@
             <property name="map_index" type="int" address="0xD35E" />
             <property name="y" type="int" address="0xD361" />
             <property name="x" type="int" address="0xD362" />
+	    <property name="repel_count" type="int" adress="0xDCA1" />	
             <property name="movement_state" type="int" address="0xD700" reference="movement_states" />
             <property name="encounter_rate" type="int" address="0xD887" />
             <property name="repel_count" type="int" address="0xD0DB" />
@@ -866,7 +867,7 @@
                         <property name="attack"  type="int" address="0xD025" length="2" />
                         <property name="defense" type="int" address="0xD027" length="2" />
                         <property name="speed"   type="int" address="0xD029" length="2" />
-                        <property name="special" type="int" address="0xD029" length="2" />
+                        <property name="special" type="int" address="0xD028" length="2" />
                     </stats>
                     <modifiers>
                         <property name="attack"   type="int" address="0xCD1A" reference="stage_modifiers" /> <!--same memory location across all Gen1 games-->
@@ -960,10 +961,10 @@
                         <property name="evasion"  type="int" address="0xCD33" reference="stage_modifiers" />
                     </modifiers>
                     <ivs>
-                        <property name="attack"  type="int" address="0xCFF1" bits="4-7" />
-                        <property name="defense" type="int" address="0xCFF1" bits="0-3" />
-                        <property name="speed"   type="int" address="0xCFF2" bits="4-7" />
-                        <property name="special" type="int" address="0xCFF2" bits="0-3" />
+                        <property name="attack"  type="int" address="0xD186" bits="4-7" />
+                        <property name="defense" type="int" address="0xD186" bits="0-3" />
+                        <property name="speed"   type="int" address="0xD187" bits="4-7" />
+                        <property name="special" type="int" address="0xD187" bits="0-3" />
                     </ivs>
                     <base_stats>
                         <property name="hp"      type="int" address="0xD002" after-read-value-expression="x % 16" />
