@@ -1895,7 +1895,7 @@
                     <property name="type_1"     type="int" address="0xD224" reference="types" />
                     <property name="type_2"     type="int" address="0xD225" reference="types" />
                     <property name="held_item"  type="int" address="0xd207" reference="items" />
-                    <property name="level"      type="int" address="0xD12D" />
+                    <property name="level"      type="int" address="0xD143" />
                     <property name="status_condition" type="int" address="0xd214" reference="status_conditions" />
                     <moves>
                         <class name="0" type="battle_moves" var:moveAddress="0xD208" />
