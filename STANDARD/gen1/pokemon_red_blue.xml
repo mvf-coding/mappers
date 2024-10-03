@@ -940,6 +940,7 @@
                     <property name="type_1"           type="int" address="0xCFEA" reference="pokemon_types" />
                     <property name="type_2"           type="int" address="0xCFEB" reference="pokemon_types" />
                     <property name="status_condition" type="int" address="0xCFE9" reference="status_conditions" />
+		    <property name="catch_rate"       type="int" address="0xD007" />
                     <moves>
                         <class name="0" type="opponent_battle_move" var:moveAddress="0xCFED" />
                         <class name="1" type="opponent_battle_move" var:moveAddress="0xCFEE" />
